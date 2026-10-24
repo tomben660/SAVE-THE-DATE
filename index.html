@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>החתונה של מיקה ותום</title>
+<meta name="description" content="מיקה ותום מתחתנים! יום שישי, 24.9.2027, בשעה 16:00, בחוות הצוף">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tomben660.github.io/SAVE-THE-DATE/">
+<meta property="og:image" content="https://tomben660.github.io/SAVE-THE-DATE/save-the-date.jpg">
+<meta property="og:image:width" content="723">
+<meta property="og:image:height" content="1208">
+<meta property="og:title" content="החתונה של מיקה ותום">
+<meta property="og:description" content="יום שישי, 24.9.2027, בשעה 16:00, בחוות הצוף">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%92%8D%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap">
+<style>
+  /* Colors sampled from the save-the-date artwork */
+  :root {
+    --paper: #FCF8ED;   /* the artwork's cream */
+    --ink: #435A6B;     /* the blue marker lettering */
+    --berry: #AB506B;   /* the date & venue lettering */
+    --hover: rgba(67, 90, 107, 0.08);
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #1E2836;
+      --ink: #F3EFE2;
+      --berry: #E58BA8;
+      --hover: rgba(243, 239, 226, 0.1);
+      color-scheme: dark;
+    }
+    .art { border-radius: 18px; }
+  }
+  * { box-sizing: border-box; margin: 0; }
+  html, body { min-height: 100%; }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Amatic SC", "Gveret Levin", "Segoe Print", "Comic Sans MS", sans-serif;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    padding: max(16px, env(safe-area-inset-top)) 20px max(24px, env(safe-area-inset-bottom));
+  }
+  main {
+    width: 100%;
+    max-width: 460px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .art {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    /* keep the invitation and the buttons on one screen */
+    max-height: max(380px, calc(100vh - 190px));
+    max-height: max(380px, calc(100svh - 190px));
+  }
+  .add { width: 100%; text-align: center; margin-top: 14px; }
+  .add p {
+    color: var(--berry);
+    font-size: 2.2rem;
+    line-height: 1.1;
+    margin-bottom: 12px;
+  }
+  .buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  /* uneven corners give the outline a hand-drawn marker feel */
+  .btn {
+    display: block;
+    padding: 6px 12px 8px;
+    border: 2.5px solid var(--ink);
+    border-radius: 255px 18px 225px 18px / 18px 225px 18px 255px;
+    color: var(--ink);
+    font-size: 2.15rem;
+    line-height: 1.15;
+    text-decoration: none;
+    transition: background-color 0.15s ease, transform 0.12s ease;
+  }
+  .btn span { font-size: 0.7em; } /* Amatic's Latin capitals run larger than its Hebrew */
+  .btn:nth-child(2) { border-radius: 18px 225px 18px 255px / 255px 18px 225px 18px; }
+  .btn:hover { background: var(--hover); }
+  .btn:active { transform: scale(0.97); }
+  .btn:focus-visible { outline: 3px solid var(--berry); outline-offset: 3px; }
+  @media (max-width: 330px) { .buttons { grid-template-columns: 1fr; } }
+  @media (prefers-reduced-motion: reduce) { .btn { transition: none; } }
+</style>
+</head>
+<body>
+<main>
+  <img class="art" src="save-the-date.jpg" width="723" height="1208"
+       alt="תשמרו ביומנים: מיקה ותום מתחתנים, 24.9.27, חוות הצוף">
+  <section class="add" aria-label="הוספה ליומן">
+    <p>הוסיפו את התאריך ליומן</p>
+    <div class="buttons">
+      <a class="btn" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=%D7%94%D7%97%D7%AA%D7%95%D7%A0%D7%94%20%D7%A9%D7%9C%20%D7%9E%D7%99%D7%A7%D7%94%20%D7%95%D7%AA%D7%95%D7%9D&amp;dates=20270924T160000%2F20270924T230000&amp;ctz=Asia%2FJerusalem&amp;location=%D7%97%D7%95%D7%95%D7%AA%20%D7%94%D7%A6%D7%95%D7%A3" target="_blank" rel="noopener">יומן <span lang="en">Google</span></a>
+      <a class="btn" href="wedding.ics">יומן <span lang="en">Apple</span></a>
+    </div>
+  </section>
+</main>
+</body>
+</html>
